@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    body{
+    background-color: powderblue;
+    }
+    header {
+    	color: green;
+    }
+    h4 {
+    	color: red;
+    }
+    h3 {
+    	text-align: center;
+    }
+   </style>     
+<title>AWOYEMI ABAYOMI- RESUME </title>
+</head>
+
+<header>
+<h5>BMO 4, Ebenezer Cott, Omi-asoro,<br>
+Ilesa, Osun State.<br>
++2348068476636<br>
+snoopyomex@gmail.com</h5>
+
+<p><h4>AWOYEMI. ABAYOMI OLUMIDE<h/4></p>
+<hr>                                 
+</header>
+
+<div>
+       <img src="https://res.cloudinary.com/snoopyomex/image/upload/v1566588794/Snoopyomex.jpg"alt=""width="300" height="300">
+</div>
+
+<body>
+<p><h4>SKILLS</p></h4>
+<p>
+      <ul>
+      <li>Active listening and analytical thinking</li>
+      <li>Creativity and innovative disposition</li>
+      <li>Interpersonal skill</li>
+      <li>Focus on service delivery</li>
+      <li>ICT enthusiasm</li>
+      </ul></p>
+<p><h4>EXPERIENCE</p></h4>
+<p><h5 style="color: blue"> Nigeria Immigration Service - Superintendent</h5></p>
+       JANUARY 2009 - PRESENT
+
+       <ul>
+       <li>Intelligence gathering and Investigation</li>
+       <li>Registration and monitoring of Immigrants</li>
+       <li>Border security and management</li>
+       <li>Issuance of travel documents</li>
+       </ul>
+<p><h5 style="color: blue">NYSC,PSS Ikot-Obong,Akwa-Ibom - Chemistry Tutor</h5></p>
+       MARCH 2007 - FEBRUARY 2008
+       
+       <ul>
+       <li>Teaching and supervision in the laboratory.</li>
+       <li>Setting and administering of exam questions.</li>
+       </ul>
+<p><h5 style="color: blue">Yinka Oba Foams,Ilesa,Osun State- Production assistant</h5></p>
+       JANUARY 2005 - JUNE 2005
+       <ul>
+       <li>Assisting the production manager</li>
+       <li>Monitoring the chemical inflow line</li>
+       <li>Testing of production materials</li>
+       </ul>
+<p><h4>EDUCATION</p></h4>
+<p><h5 style="color:blue">Ladoke Akintola University of Technology,Ogbomoso.</h5>
+       2006: 
+       B.TECH (Chemical Engineering);Second Class
+   <h5 style="color: blue">Obokun High School, Ilesa, Osun state.</h5>
+       1999: 
+       Senior Secondary School Certificate   
+   <h5 style="color: blue">Olatunde Memorial Nur/Pry School, Ilesa, Osun state.</h5>   
+       1993: 
+       Primary School Leaving Certificate</p>
+<p><h4>REFERENCES</p></h4>
+       To be made available on request.</p>
+       
+<div 
+     
+        <div class="form-header header-blue">
+            <h3>CONTACT ME</h3>
+        </div>
+       
+  <div class="container">
+        <form action="/abayomi.php" method="post">
+  </div>   
+    
+<div class="section">
+    <h5 style="color: blue">
+        <label for="title">Title</label><br></h5>
+        <select id="title" 
+        name="title">
+        
+        <option
+        value="mr">Mr</option>
+        <option
+        value="mrs">Mrs</option>
+        <option
+        value="miss">Miss</option>
+        </select>
+     </div>
+     
+     <div> 
+     <h5 style="color: blue">
+        <label for="name">Name</label><br></h5>
+            <input type="text" name="name" id="name" required placeholder="Enter Name...">
+    </div>
+   
+    <div class="section colm colm6">
+        <h5 style="color: blue"> 
+        <label for="email">Email</label><br></h5>
+            <input type="text" name="email" id="email" required placeholder="Enter a valid Email address...">
+    </div>
+
+<div class ="section">
+    <h5 style="color: blue">
+    <label for="phonenumber">Phone number</label><br></h5>
+        <input type="text" name="phonenumber" id="phonenumber" required placeholder="Enter a valid Phone number...">
+</div>    
+ 
+<div class="section">
+    <h5 style="color: blue">
+    <label for="subject">Subject</label><br></h5>
+        <input type="text" name="subject" id="subject" placeholder="Enter Subject...">
+</div>
+ 
+<div class="section">
+    <h5 style="color: blue">
+    <label for="message">Message</label><br></h5>
+        <textarea
+        <input type="text" name="Mesaage" id="Message" placeholder="Enter message..."> 
+        </textarea>
+    </label>
+</div>
+ 
+      
+        <div class="form-footer">
+                <button type="submit" class="button btn-green pushed">Submit</button>
+            </div>
+       </div>
+       </form>
+       
+     </div>
+   </div>
+
+       
+</body>
+</html>
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+ 
+<script>
+
+  function checkForm(form)
+  {
+    // validation fails if the input is less than 4 charcters
+    if(form.name.value == "") {
+      alert("Error: Input contains less than 4 characters!");
+      form.inputfield.focus();
+      return false;
+    }
+
+    // regular expression to match only alphanumeric characters and spaces
+    var re = /^[\w ]+$/;
+
+    // validation fails if the input is less than 20 charcters
+    if(!re.test(form.message.value)) {
+      alert("Error: Input contains less than 20 characters!");
+      form.inputfield.focus();
+      return false;
+    }
+
+    // validation was successful
+    return true;
+  }
+
+</script>
